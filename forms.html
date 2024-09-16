@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Title>Lab 3</Title>
+</head>
+<body>
+<form>
+    <!--Label used to display information-->
+    <label for="f1teams">Choose your favorite F1 team:</label>  <!--This is a list comprising of F1 team options-->
+    <input id="f1teams" name="f1teams" list="f1team" placeholder="Red Bull">
+    <!--Datalist used to give predetermined options-->
+    <datalist id="f1team">
+        <option value="Red Bull">
+        <option value="Ferarri">
+        <option value="Aston Martin">
+        <option value="Mclaren">
+        <option value="Mercedes">
+        <option value="Alpine">
+        <option value="Williams">
+        <option value="Haas">
+        <option value="I dont have a favorite">
+    </datalist>
+    <br>
+    <br>
+    <!--Button element used to act as a button-->
+    <input type="button" value="This is my button!"> 
+    <br>
+    <br>
+    <label for="checkbox1">Does Adnan like web development:</label>
+    <!--Checkbox used to select option, can choose more than one option-->
+    <input type="checkbox" id="checkbox1" name="checkbox">
+    <br>
+    <br>
+    <label for="custom-color">Pick favorite color:</label>
+    <!--Color used to select a color-->
+    <input type="color" id="custom-color" name="color">
+    <br>
+    <br>
+    <label for="dates">Select ideal date for graduation:</label>
+    <!--date used to select a date-->
+    <input type="date" id="dates" name="date" required>
+    <br>
+    <br>
+    <label for="datetime-local">Date Time Local:</label>
+    <!--datetime-local to select local time-->
+    <input type="datetime-local" id="datetime-local" name="datetime-local">
+    <br>
+    <br>
+    <label for="email">Enter your Email:</label>
+    <!--inpute type="email" element used to input email-->
+    <input type="email" id="email" name="email" required>
+    <br>
+    <br>
+    <label for="file">Select File:</label>
+    <!--input type="file" element used to select a file to upload-->
+    <input type="file" id="file" name="file">
+    <br>
+    <br>
+    <!--input type="hidden" element used to hide-->
+    <input type="hidden" id="hidden" name="hidden" value="hiddenValue">
+    <br>
+    <br>
+    <input type="image" id="image" name="image" src="f1.jpg" width="100" height="100">
+    <br>
+    <br>
+    <label for="month">Choose Month of graduation:</label>
+    <!--input type="month" used to select a month-->
+    <input type="month" id="month" name="month">
+    <br>
+    <br>
+    <label for="number">Pick a number between 1-10:</label>
+    <!--inpute type="number" element used to select a number-->
+    <input type="number" id="number" name="number">
+    <br>
+    <br>
+    <label for="password">Enter Password for temple account:</label>
+    <!--input type="password" element used to allow user to enter their password-->
+    <input type="password" id="password" name="password">
+    <br>
+    <br>
+    <label for="gender">Gender:</label>
+    <!--input type="radio" element used to add radio button to select only one option-->
+    <input type="radio" id="radio" name="radio">
+    <label for="radio">Male</label>
+    <input type="radio" id="radio" name="radio">
+    <label for="radio">Female</label>
+    <input type="radio" id="radio" name="radio">
+    <label for="radio">Rather not say</label>
+    <br>
+    <br>
+    <label for="range">Brightness:</label>
+    <!--input type="range" element used to select the range of brightness-->
+    <input type="range" id="range" name="range" min="0" max="150">
+    <br>
+    <br>
+    <!--inpue type="reset" element used to reset the form information-->
+    <input type="reset" id="reset" name="reset">
+    <br>
+    <br>
+    <label for="search">Search:</label>
+    <!--input type="label" element used to search-->
+    <input type="search" id="search" name="search">
+    <br>
+    <br>
+    <!--input type="submit" element used to add a button to submit the form-->
+    <input type="submit" id="submit" name="submit">
+    <br>
+    <br>
+    <label for="tel">Telephone no.:</label>
+    <!--input type="tel" element used to enter telephone number in format-->
+    <input type="tel" id="tel" name="tel" placeholder="123-456-7890" required>
+    <br>
+    <br>
+    <label for="text">Who's your favorite F1 driver:</label>
+    <!--input type="text" element used to enter text-->
+    <input type="text" id="text" name="text">
+    <br>
+    <br>
+    <label for="time">What time would you like to schedule your meeting:</label>
+    <!--input type="time" element used to select time-->
+    <input type="time" id="time" name="time">
+    <br>
+    <br>
+    <label for="url">What's your favorite website:</label>
+    <!--input type="url" element used to enter URL's-->
+    <input type="url" id="url" name="url">
+    <br>
+    <br>
+    <label for="week">What week will you be travelling:</label>
+    <!--input type="week" element used to select week-->
+    <input type="week" id="week" name="week">
+    <br>
+    <br>
+    <!--textarea used to add an area where text can be written-->
+    <textarea name="textarea" rows="6" cols="40">Write a short essay on why you like web development. </textarea>
+    <br>
+    <br>
+    <fieldset>
+        <!--fieldset element used to group following elements-->
+        <legend>Booking Details for Flight</legend>
+        <!--legend element used to give description to grouped elements-->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <br>
+        <label for="flightno">Flight Number:</label>
+        <input type="number" id="flightno" name="flightno" required>
+        
+    </fieldset>
+    <br>
+    <br>
+    <label for="games">Which in your opinion is the best video game:</label>
+    <!--select element used to give a dropdown of option to be selected-->
+    <select name="games" id="options">
+        <optgroup label="RPG's">
+        <option value="option1">Witcher 3</option>
+        <option value="option2">Skyrim</option>
+        <option value="option3">Baldur's Gate 3</option>
+        </optgroup>
+        <optgroup label="Action Adventure">
+            <option value="option4">Red Dead Redemption</option>
+            <option value="option5">God Of War</option>
+            <option value="option6">Sekiro</option>
+        </optgroup>
+    </select>
+    <br>
+    <br>
+</form>  
+</body>
+</html>
